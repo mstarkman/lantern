@@ -1,0 +1,13 @@
+[tools]
+postgres = "18.0"
+ruby = "4.0.10"
+
+[env]
+PGDATA = "{{config_root}}/tmp/postgres"
+
+[tasks."db:start"]
+run = "pg_ctl -l {{config_root}}/tmp/postgres.log start"
+
+[tasks."db:stop"]
+run = "pg_ctl stop"
+
