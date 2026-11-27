@@ -39,3 +39,6 @@
 
 # mise
 !mise.toml
+
+# Share project-level Claude Code skills (overrides global .claude/* ignore)
+!.claude/skills/
